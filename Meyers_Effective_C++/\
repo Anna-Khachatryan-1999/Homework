@@ -1,0 +1,20 @@
+#include <iostream>
+#include "header.h"
+
+class Game
+{
+public:
+    int get() const
+    {
+        return num;
+    }
+private:
+    static const int num = 5;
+};
+
+int main()
+{
+    Game g;
+    std::cout << g.get() << std::endl;
+    return 0;
+}
